@@ -1,0 +1,9 @@
+> 29531 / tcp
+* /nnssf-nssaiavailability/v1
+/nssai-availability/subscriptions|POST
+/nssai-availability/[nfId]|DELETE
+/nssai-availability/[nfId]|PATCH
+/nssai-availability/[nfId]|PUT
+/nssai-availability/[nfId]/[subscriptionId]|DELETE
+* /nnssf-nsselection/v1`
+/network-slice-information|GET

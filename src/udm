@@ -1,0 +1,47 @@
+> 29503 / tcp
+* /nudm-ee/v1 
+/[ueId]/ee-subscriptions|POST
+/[ueId]/ee-subscriptions/[subscriptionId]|DELETE
+/[ueId]/ee-subscriptions/[subscriptionId]|PATCH
+* /nudm-pp/v1
+/[gpsi]/pp-data|PATCH
+* /nudm-sdm/v1
+/shared-data|GET
+/shared-data-subscriptions|POST
+/shared-data-subscriptions/[subscriptionId]|DELETE
+/shared-data-subscriptions/[subscriptionId]|PATCH
+* /nudm-sdm/v1/[supi]
+/|GET
+/nssai|GET
+/trace-data|GET
+/id-translation-result|GET
+/sdm-subscriptions|POST
+/sdm-subscriptions/[subscriptionId]|DELETE
+/sdm-subscriptions/[subscriptionId]|PATCH
+/am-data|GET
+/am-data/sor-ack|PUT
+/am-data/upu-ack|PUT
+/sm-data|GET
+/smf-select-data|GET
+/sms-mng-data|GET
+/sms-data|GET
+/ue-context-in-smf-data|GET
+/ue-context-in-smsf-data|GET
+* /nudm-ueau/v1
+/[supi]/auth-events|POST
+/[supi / suci]/security-information/generate-auth-data|POST
+* nudm-uecm/v1
+/[ueId]/registrations/amf-3gpp-access|GET
+/[ueId]/registrations/amf-3gpp-access|PUT
+/[ueId]/registrations/amf-3gpp-access|PATCH
+/[ueId]/registrations/amf-non-3gpp-access|GET
+/[ueId]/registrations/amf-non-3gpp-access|PUT
+/[ueId]/registrations/amf-non-3gpp-access|PATCH
+/[ueId]/registrations/smf-registrations/[pduSessionId]|DELETE
+/[ueId]/registrations/smf-registrations/[pduSessionId]|PUT
+/[ueId]/registrations/smsf-3gpp-access|GET
+/[ueId]/registrations/smsf-3gpp-access|DELETE
+/[ueId]/registrations/smsf-3gpp-access|PUT
+/[ueId]/registrations/smsf-non-3gpp-access|GET
+/[ueId]/registrations/smsf-non-3gpp-access|DELETE
+/[ueId]/registrations/smsf-non-3gpp-access|PUT

@@ -1,0 +1,27 @@
+> 29507 / tcp
+* /npcf-am-policy-control/v1
+/policies|POST
+/policies/[polAssoId]|DELETE
+/policies/[polAssoId]|GET
+/policies/[polAssoId]/update|POST
+* /npcf-bdtpolicycontrol/v1
+/bdtpolicies|POST
+/bdtpolicies/[bdtPolicyId]|GET
+/bdtpolicies/[bdtPolicyId]|PATCH
+* /npcf-policyauthorization/v1
+/app-sessions|POST
+/app-sessions/[appSessionId]/events-subscription|DELETE
+/app-sessions/[appSessionId]/events-subscription|PUT
+/app-sessions/[appSessionId]/delete|POST
+/app-sessions/[appSessionId]|GET
+/app-sessions/[appSessionId]|PATCH
+* /npcf-smpolicycontrol/v1
+/sm-policies|POST
+/sm-policies/[smPolicyId]/delete|POST
+/sm-policies/[smPolicyId]|GET
+/sm-policies/[smPolicyId]/update|POST
+* /npcf-ue-policy-control/v1
+/policies/[polAssoId]|DELETE
+/policies/[polAssoId]|GET
+/policies/[polAssoId]/update|POST
+/policies|POST
