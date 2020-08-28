@@ -23,16 +23,48 @@ def load_default(nf):
  		}
 		return udr_default
 	elif nf == "udm":
-		pass
+		udm_default = {
+			 "ueId": "imsi-2089300007487",
+			 "supi": "0",
+			 "supi / suci": "0",
+			 "subscriptionId": "0",
+			 "gpsi": "0",
+		}
+		return udm_default
 	elif nf == "amf":
-		pass
+		amf_default = {
+			"subscriptionId": "0",
+			"ueContextId": "0",
+			"n1N2MessageId": "0",
+			"n2NotifySubscriptionId": "0"
+		}
+		return amf_default
 	elif nf == "nssf":
-		pass
+		nssf_default = {
+			"nfId": "deadbeef",
+			"subscriptionId": "0"
+		}
+		return nssf_default
 	elif nf == "ausf":
-		pass
+		ausf_default = {
+			"supi": "0",
+			"authCtxID": "0"
+		}
+		return ausf_default
 	elif nf == "nrf":
-		pass
+		nrf_default = {
+			"nfInstanceId": "deadbeef",
+			"subscriptionId": "0"
+		}
+		return nrf_default
 	elif nf == "pcf":
-		pass
+		pcf_default = {
+			"polAssoId": "0",
+			"bdtPolicyId": "0",
+			"appSessionId": "0",
+			"smPolicyId": "0",
+			"polAssoId": "0"
+		}
+		return pcf_default
 	else:
 		return 0
