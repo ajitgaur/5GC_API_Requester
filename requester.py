@@ -3,7 +3,7 @@ import param
 
 def main():
 	address = input("NF address: ")
-	nf = input("Select NF: (smf / udr)\n>> ") 
+	nf = input("Select NF: (smf / udr / udm / amf / ausf / nssf / pcf / nrf)\n>> ") 
 	param_default = param.load_default(nf)
 	filename = "src/" + nf
 	
