@@ -1,4 +1,7 @@
 > 29502 / tcp
+* /nsmf-oam/v1
+/|GET
+/ue-pdu-session-info/[smContextRef]|GET
 * /nsmf-pdusession/v1
 /pdu-sessions/[pduSessionRef]/release|POST
 /pdu-sessions/[pduSessionRef]/modify|POST
