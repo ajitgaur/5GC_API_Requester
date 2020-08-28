@@ -44,15 +44,15 @@ def main():
 	for url, method in zip(urls, methods):
 		result = method + " " * (8 - len(method)) + url + " " * (150 - len(url))
 		if method == "GET":
-			result += requests.get(url)
+			result += str(requests.get(url).status_code)
 		elif method == "POST":
-			result += requests.post(url)
+			result += str(requests.post(url).status_code)
 		elif method == "PUT":
-			result += requests.put(url)
+			result += str(requests.put(url).status_code)
 		elif method == "DELETE":
-			result += requests.delete(url)
+			result += str(requests.delete(url).status_code)
 		elif method == "PATCH":
-			result += requests.patch(url)
+			result += str(requests.patch(url).status_code)
 		else:
 			result = "Method Error!"
 		print(result)
