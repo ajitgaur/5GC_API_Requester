@@ -1,0 +1,14 @@
+> 29502 / tcp
+* /nsmf-pdusession/v1
+/pdu-sessions/[pduSessionRef]/release|POST
+/pdu-sessions/[pduSessionRef]/modify|POST
+/sm-contexts/[smContextRef]/release|POST
+/sm-contexts/[smContextRef]/retrieve|POST
+/sm-contexts/[smContextRef]/modify|POST
+/pdu-sessions|POST
+/sm-contexts|POST
+* /nsmf_event-exposure/v1
+/subscriptions|POST
+/subscriptions/[subsId]|DELETE
+/subscriptions/[subsId]|GET
+/subscriptions/[subsId]|PUT
