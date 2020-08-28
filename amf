@@ -1,0 +1,27 @@
+> 29518 / tcp
+* /namf-comm/v1
+/subscriptions/[subscriptionId]|PUT
+/subscriptions/[subscriptionId]|DELETE
+/ue-contexts/[ueContextId]|PUT
+/ue-contexts/[ueContextId]/assign-ebi|POST
+/ue-contexts/[ueContextId]/trasfer-update|POST
+/ue-contexts/[ueContextId]/release|POST
+/ue-contexts/[ueContextId]/transfer|POST
+/ue-contexts/[ueContextId]/n1-n2-messages/subscriptions/[subscriptionId]|DELETE
+/ue-contexts/[ueContextId]/n1-n2-messages|POST
+/ue-contexts/[ueContextId]/n1-n2-messages/[n1N2MessageId]|GET
+/ue-contexts/[ueContextId]/n1-n2-messages/subscriptions|POST
+/non-ue-n2-messages/subscriptions/[n2NotifySubscriptionId]|DELETE
+/non-ue-n2-messages/transfer|POST
+/non-ue-n2-messages/subscriptions|POST
+/subscriptions|POST
+* /namf-evts/v1
+/subscriptions/[subscriptionId]|DELETE
+/subscriptions/[subscriptionId]|PATCH
+/subscriptions|POST
+* namf-loc/v1
+/[ueContextId]/provide-loc-info|POST
+/[ueContextId]/provide-pos-info|POST
+* /namf-mt/v1
+/ue-contexts/[ueContextId]|GET
+/ue-contexts/[ueContextId]/ue-reachind|POST
