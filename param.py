@@ -8,7 +8,7 @@ def load_default(nf):
 			"subsId": "0"
 		}
 		return smf_default
-	elif ne == "udr":
+	elif nf == "udr":
 		udr_default = {
 			"ueId": "imsi-2089300007487",
 			"servingPlmnId": "20893",
