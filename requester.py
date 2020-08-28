@@ -22,7 +22,7 @@ def main():
 			elif line[0] == "*":
 				api = line.split(" ")[1][:-1]
 			else:
-				urls.append(address + port + api + line.split("|")[0])
+				urls.append("http://" + address + port + api + line.split("|")[0])
 				methods.append(line.split("|")[1][:-1])
 	
 	for i in range(len(urls)):
