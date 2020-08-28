@@ -3,7 +3,7 @@ import param
 
 def main():
 	address = "127.0.0.1"
-	nf = input("Select NF: (smf)\n>> ") 
+	nf = input("Select NF: (smf / udr)\n>> ") 
 	param_default = param.load_default(nf)
 	filename = "src/" + nf
 	
