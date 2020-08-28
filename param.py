@@ -22,5 +22,17 @@ def load_default(nf):
 			"usageMonId": "0"
  		}
 		return udr_default
+	elif nf == "udm":
+		pass
+	elif nf == "amf":
+		pass
+	elif nf == "nssf":
+		pass
+	elif nf == "ausf":
+		pass
+	elif nf == "nrf":
+		pass
+	elif nf == "pcf":
+		pass
 	else:
 		return 0
