@@ -1,0 +1,13 @@
+> 29510 / tcp
+* /oauth2/token
+* /nnrf-disc/v1
+/nf-instances|GET
+* nnrf-nfm/v1
+/nf-instances/[nfInstanceID]|GET
+/nf-instances/[nfInstanceID]|PUT
+/nf-instances/[nfInstanceID]|DELETE
+/nf-instances/[nfInstanceID]|PATCH
+/nf-instances|GET
+/subscriptions|POST
+/subscriptions/[subscriptionID]|PATCH
+/subscriptions/[subscriptionID]|DELETE
