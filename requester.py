@@ -2,7 +2,7 @@ import requests
 import param
 
 def main():
-	address = "127.0.0.1"
+	address = input("NF address: ")
 	nf = input("Select NF: (smf / udr)\n>> ") 
 	param_default = param.load_default(nf)
 	filename = "src/" + nf
