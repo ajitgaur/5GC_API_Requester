@@ -13,7 +13,7 @@ udr_default = {"ueId": "imsi-2089300007487",
 			}
 address = "127.0.0.1"
 
-filename = input("Select NF: (udr / amf)\n>> ")
+filename = "src/" + input("Select NF: (udr / amf)\n>> ")
 with open(filename, 'r') as f:
 	api = ""
 	port = ""
