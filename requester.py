@@ -26,7 +26,6 @@ def main():
 				methods.append(line.split("|")[1][:-1])
 	
 	for i in range(len(urls)):
-		
 		# Replace parameter
 		index = [0, 0]
 		tmp = ""
@@ -40,8 +39,23 @@ def main():
 				urls[i] = urls[i].replace(urls[i][index[0]:index[1] + 1], param_default[key])
 				ii = index[0]
 			ii += 1
-				
-		print(urls[i], methods[i])			
+	
+	print("\nMETHOD" + " " * 2 + "URL" + " " * 150 + "RESPONSE" + "\n" + "-" * 169)
+	for url, method in zip(urls, methods):
+		result = method + " " * (8 - len(method)) + url + " " * (150 - len(url))
+		if method == "GET":
+			result += requests.get(url)
+		elif method == "POST":
+			result += requests.post(url)
+		elif method == "PUT":
+			result += requests.put(url)
+		elif method == "DELETE":
+			result += requests.delete(url)
+		elif method == "PATCH":
+			result += requests.patch(url)
+		else:
+			result = "Method Error!"
+		print(result)
 
 if __name__ == '__main__':
 	main()
