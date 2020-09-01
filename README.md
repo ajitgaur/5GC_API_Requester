@@ -1,2 +1,8 @@
 # Free5GC API URL Testing
-* Still developing and debugging ...
+* This project is developed by python 3.x.
+* Usage
+	```bash
+	$ python requester.py
+	```
+	1. Input the valid IP address
+	2. Select the testing network function
