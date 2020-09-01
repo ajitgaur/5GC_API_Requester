@@ -58,6 +58,7 @@ def main():
 				Print("ERROR" + "   " + " " * 150, 0)
 		except:
 			Print(" " * 8 + "Server Crash" + " " * 138, 0)
+			break
 
 def Print(_result, _status):
 	print(_result, end = "")
