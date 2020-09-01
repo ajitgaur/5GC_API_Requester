@@ -55,9 +55,9 @@ def main():
 			elif method == "PATCH":
 				Print(result, requests.patch(url).status_code)
 			else:
-				Print("Method Error!", 0)
+				Print("ERROR" + "   " + " " * 150, 0)
 		except:
-			Print("Server Crash", 0)
+			Print(" " * 8 + "Server Crash" + " " * 138, 0)
 
 def Print(_result, _status):
 	print(_result, end = "")
