@@ -2,8 +2,15 @@ import requests
 import param
 
 def main():
-	address = input("NF address: ")
-	nf = input("Select NF: (smf / udr / udm / amf / ausf / nssf / pcf / nrf)\n>> ") 
+	address = input("NF address (default: 127.0.0.1): ")
+	if address == "":
+		address = "127.0.0.1"
+
+	nf = input("Select NF: (smf / udr / udm / amf / ausf / nssf / pcf / nrf)\n>> ")
+	while nf == "":
+		print("Please select a NF")
+		nf = input("(smf / udr / udm / amf / ausf / nssf / pcf / nrf)\n>> ")
+
 	param_default = param.load_default(nf)
 	filename = "src/" + nf
 	
