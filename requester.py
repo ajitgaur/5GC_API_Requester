@@ -76,6 +76,8 @@ def Print(_result, _status):
 		print("\033[1;42m %s \033[0m" % str(_status))
 	elif div == 4 and mod == 0:
 		print("\033[1;45m %s \033[0m" % str(_status))
+	elif div == 4 and mod == 3:
+		print("\033[1;43m %s \033[0m" % str(_status))
 	elif div == 5:
 		print("\033[1;41m %s \033[0m" % str(_status))
 	else:
