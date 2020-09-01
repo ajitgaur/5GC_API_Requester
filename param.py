@@ -19,7 +19,8 @@ def load_default(nf):
 			"influenceId": "0",
 			"bdtReferenceId": "0",
 			"sponsorId": "0",
-			"usageMonId": "0"
+			"usageMonId": "0",
+			"subscriptionId": "0"
  		}
 		return udr_default
 	elif nf == "udm":
@@ -29,6 +30,7 @@ def load_default(nf):
 			 "supi / suci": "0",
 			 "subscriptionId": "0",
 			 "gpsi": "0",
+			 "pduSessionId": "0"
 		}
 		return udm_default
 	elif nf == "amf":
@@ -53,8 +55,8 @@ def load_default(nf):
 		return ausf_default
 	elif nf == "nrf":
 		nrf_default = {
-			"nfInstanceId": "deadbeef",
-			"subscriptionId": "0"
+			"nfInstanceID": "deadbeef",
+			"subscriptionID": "0"
 		}
 		return nrf_default
 	elif nf == "pcf":

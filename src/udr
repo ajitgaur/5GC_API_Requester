@@ -70,13 +70,13 @@
 /influenceData/[influenceId]|PATCH
 /influenceData/[influenceId]|PUT
 /influenceData/[influenceId]|GET
-/influence/[influeceId]|POST
+/influence/[influenceId]|POST
 * /nudr-dr/v1/policy-data
 /bdt-data/[bdtReferenceId]|DELETE
 /bdt-data/[bdtReferenceId]|GET
 /bdt-data/[bdtReferenceId]|PUT
 /bdt-data|GET
-/plmns/[plmnId]/ue-policy-set|GET
+/plmns/[servingPlmnId]/ue-policy-set|GET
 /sponsor-connectivity-data/[sponsorId]|GET
 /subs-to-notify|POST
 /subs-to-notify/[subsId]|DELETE
@@ -101,5 +101,5 @@
 /[ueId]/access-and-mobility-data|DELETE
 /[ueId]/access-and-mobility-data|GET
 /subs-to-notify|POST
-/subs-to-notify/[subId]|DELETE
-/subs-to-notify/[subId]|PUT
+/subs-to-notify/[subsId]|DELETE
+/subs-to-notify/[subsId]|PUT
