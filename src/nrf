@@ -2,7 +2,7 @@
 * /oauth2/token
 * /nnrf-disc/v1
 /nf-instances|GET
-* nnrf-nfm/v1
+* /nnrf-nfm/v1
 /nf-instances/[nfInstanceID]|GET
 /nf-instances/[nfInstanceID]|PUT
 /nf-instances/[nfInstanceID]|DELETE
