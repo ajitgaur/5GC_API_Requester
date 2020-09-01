@@ -79,7 +79,7 @@ def Print(_result, _status):
 	elif div == 5:
 		print("\033[1;41m %s \033[0m" % str(_status))
 	else:
-		print(str(_status))
+		print(" " + str(_status))
 
 if __name__ == '__main__':
 	main()
