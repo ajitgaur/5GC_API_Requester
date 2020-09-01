@@ -43,19 +43,21 @@ def main():
 	print("\nMETHOD" + " " * 2 + "URL" + " " * 147 + "RESPONSE" + "\n" + "-" * 166)
 	for url, method in zip(urls, methods):
 		result = method + " " * (8 - len(method)) + url + " " * (150 - len(url))
-		
-		if method == "GET":
-			Print(result, requests.get(url).status_code)
-		elif method == "POST":
-			Print(result, requests.post(url).status_code)
-		elif method == "PUT":
-			Print(result, requests.put(url).status_code)
-		elif method == "DELETE":
-			Print(result, requests.delete(url).status_code)
-		elif method == "PATCH":
-			Print(result, requests.patch(url).status_code)
-		else:
-			Print("Method Error!", 0)
+		try:	
+			if method == "GET":
+				Print(result, requests.get(url).status_code)
+			elif method == "POST":
+				Print(result, requests.post(url).status_code)
+			elif method == "PUT":
+				Print(result, requests.put(url).status_code)
+			elif method == "DELETE":
+				Print(result, requests.delete(url).status_code)
+			elif method == "PATCH":
+				Print(result, requests.patch(url).status_code)
+			else:
+				Print("Method Error!", 0)
+		except:
+			Print("Server Crash", 0)
 
 def Print(_result, _status):
 	print(_result, end = "")
