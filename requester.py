@@ -45,19 +45,31 @@ def main():
 		result = method + " " * (8 - len(method)) + url + " " * (150 - len(url))
 		
 		if method == "GET":
-			result += str(requests.get(url).status_code)
+			Print(result, requests.get(url).status_code)
 		elif method == "POST":
-			result += str(requests.post(url).status_code)
+			Print(result, requests.post(url).status_code)
 		elif method == "PUT":
-			result += str(requests.put(url).status_code)
+			Print(result, requests.put(url).status_code)
 		elif method == "DELETE":
-			result += str(requests.delete(url).status_code)
+			Print(result, requests.delete(url).status_code)
 		elif method == "PATCH":
-			result += str(requests.patch(url).status_code)
+			Print(result, requests.patch(url).status_code)
 		else:
-			result = "Method Error!"
-		
-		print(result)
+			Print("Method Error!", 0)
+
+def Print(_result, _status):
+	print(_result, end = "")
+	
+	div = _status // 100
+	mod = _status % 100
+	if div == 2:
+		print("\033[7;42m %s \033[0m", str(_status))
+	elif div == 4 and mod == 0:
+		print("\033[7;45m %s \033[0m", str(_status))
+	elif div == 5:
+		print("\033[7;41m %s \033[0m", str(_status))
+	else:
+		print(str(_status))
 
 if __name__ == '__main__':
 	main()
