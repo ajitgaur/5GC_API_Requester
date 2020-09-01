@@ -43,7 +43,7 @@ def main():
 	print("\nMETHOD" + " " * 2 + "URL" + " " * 147 + "RESPONSE" + "\n" + "-" * 166)
 	for url, method in zip(urls, methods):
 		result = method + " " * (8 - len(method)) + url + " " * (150 - len(url))
-		"""
+		
 		if method == "GET":
 			result += str(requests.get(url).status_code)
 		elif method == "POST":
@@ -56,7 +56,7 @@ def main():
 			result += str(requests.patch(url).status_code)
 		else:
 			result = "Method Error!"
-		"""
+		
 		print(result)
 
 if __name__ == '__main__':
