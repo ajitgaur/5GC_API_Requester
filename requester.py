@@ -63,9 +63,12 @@ def main():
 				Print(result, requests.patch(url, timeout = 5).status_code)
 			else:
 				Print("ERROR" + "   " + " " * 150, 0)
-		except:
-			Print(" " * 8 + "Server Crash" + " " * 138, 0)
+		except requests.exceptions.Timeout:
+			Print(" " * 8 + "Time Out" + " " * 142, 0)
 			continue
+		except requests.exceptions.ConnectionError:
+			Print(" " * 8 + "Server Crash" + " " * 138, 0)
+			break
 
 def Print(_result, _status):
 	print(_result, end = "")
