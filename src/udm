@@ -30,7 +30,7 @@
 * /nudm-ueau/v1
 /[supi]/auth-events|POST
 /[supi / suci]/security-information/generate-auth-data|POST
-* nudm-uecm/v1
+* /nudm-uecm/v1
 /[ueId]/registrations/amf-3gpp-access|GET
 /[ueId]/registrations/amf-3gpp-access|PUT
 /[ueId]/registrations/amf-3gpp-access|PATCH

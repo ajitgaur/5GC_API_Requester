@@ -19,7 +19,7 @@
 /subscriptions/[subscriptionId]|DELETE
 /subscriptions/[subscriptionId]|PATCH
 /subscriptions|POST
-* namf-loc/v1
+* /namf-loc/v1
 /[ueContextId]/provide-loc-info|POST
 /[ueContextId]/provide-pos-info|POST
 * /namf-mt/v1

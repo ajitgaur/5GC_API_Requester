@@ -1,9 +1,9 @@
 > 29509 / tcp
 * /nausf-sorprotection/v1
 /[supi]/ue-sor|POST
-* nausf-auth/v1
+* /nausf-auth/v1
 /ue-authentications/[authCtxID]/eap-session|POST
 /ue-authentications/[authCtxID]/5g-aka-confirmation|PUT
 /ue-authentications|POST 
-* nausf-upuprotection/v1 
+* /nausf-upuprotection/v1 
 /[supi]/ue-upu|POST
