@@ -63,8 +63,8 @@ def main():
 				Print(result, requests.patch(url).status_code)
 			else:
 				Print("ERROR" + "   " + " " * 150, 0)
-		except requests.exceptions.RequestException as e:
-			print(e)
+		except:
+			Print(" " * 8 + "Server Crash" + " " * 138, 0)
 			continue
 
 def Print(_result, _status):
