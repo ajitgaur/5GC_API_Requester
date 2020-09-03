@@ -1,5 +1,6 @@
-# Free5GC API URL Testing
+# 5GC API Requester
 * This project is developed by python 3.x.
+* Testing Environment: Free5GC
 * Usage
 	```bash
 	$ python requester.py
