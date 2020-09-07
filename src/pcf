@@ -4,10 +4,6 @@
 /policies/[polAssoId]|DELETE
 /policies/[polAssoId]|GET
 /policies/[polAssoId]/update|POST
-* /npcf-bdtpolicycontrol/v1
-/bdtpolicies|POST
-/bdtpolicies/[bdtPolicyId]|GET
-/bdtpolicies/[bdtPolicyId]|PATCH
 * /npcf-policyauthorization/v1
 /app-sessions|POST
 /app-sessions/[appSessionId]/events-subscription|DELETE
@@ -25,3 +21,7 @@
 /policies/[polAssoId]|GET
 /policies/[polAssoId]/update|POST
 /policies|POST
+* /npcf-bdtpolicycontrol/v1
+/bdtpolicies|POST
+/bdtpolicies/[bdtPolicyId]|GET
+/bdtpolicies/[bdtPolicyId]|PATCH
