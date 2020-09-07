@@ -5,5 +5,5 @@
 /nssai-availability/[nfId]|PATCH
 /nssai-availability/[nfId]|PUT
 /nssai-availability/[nfId]/[subscriptionId]|DELETE
-* /nnssf-nsselection/v1`
+* /nnssf-nsselection/v1
 /network-slice-information|GET
