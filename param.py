@@ -49,8 +49,8 @@ def load_default(nf):
 		return nssf_default
 	elif nf == "ausf":
 		ausf_default = {
-			"supi": "0",
-			"authCtxID": "0"
+			"supi": "imsi-2089300007487",
+			"authCtxID": "imsi-2089300007487"
 		}
 		return ausf_default
 	elif nf == "nrf":
