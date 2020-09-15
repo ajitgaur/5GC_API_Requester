@@ -36,7 +36,7 @@ def load_default(nf):
 	elif nf == "amf":
 		amf_default = {
 			"subscriptionId": "0",
-			"ueContextId": "0",
+			"ueContextId": "imsi-2089300007487",
 			"n1N2MessageId": "0",
 			"n2NotifySubscriptionId": "0"
 		}

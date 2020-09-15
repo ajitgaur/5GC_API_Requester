@@ -1,4 +1,14 @@
 > 29518 / tcp
+* /namf-evts/v1
+/subscriptions/[subscriptionId]|DELETE
+/subscriptions/[subscriptionId]|PATCH
+/subscriptions|POST
+* /namf-loc/v1
+/[ueContextId]/provide-loc-info|POST
+/[ueContextId]/provide-pos-info|POST
+* /namf-mt/v1
+/ue-contexts/[ueContextId]|GET
+/ue-contexts/[ueContextId]/ue-reachind|POST
 * /namf-comm/v1
 /subscriptions/[subscriptionId]|PUT
 /subscriptions/[subscriptionId]|DELETE
@@ -15,13 +25,3 @@
 /non-ue-n2-messages/transfer|POST
 /non-ue-n2-messages/subscriptions|POST
 /subscriptions|POST
-* /namf-evts/v1
-/subscriptions/[subscriptionId]|DELETE
-/subscriptions/[subscriptionId]|PATCH
-/subscriptions|POST
-* /namf-loc/v1
-/[ueContextId]/provide-loc-info|POST
-/[ueContextId]/provide-pos-info|POST
-* /namf-mt/v1
-/ue-contexts/[ueContextId]|GET
-/ue-contexts/[ueContextId]/ue-reachind|POST
