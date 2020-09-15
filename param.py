@@ -38,7 +38,8 @@ def load_default(nf):
 			"subscriptionId": "0",
 			"ueContextId": "imsi-2089300007487",
 			"n1N2MessageId": "0",
-			"n2NotifySubscriptionId": "0"
+			"n2NotifySubscriptionId": "0",
+			"supi": "imsi-2089300007487"
 		}
 		return amf_default
 	elif nf == "nssf":

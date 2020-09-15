@@ -9,6 +9,9 @@
 * /namf-mt/v1
 /ue-contexts/[ueContextId]|GET
 /ue-contexts/[ueContextId]/ue-reachind|POST
+* /namf-oam/v1
+/registered-ue-context|GET
+/registered-ue-context/[supi]|GET
 * /namf-comm/v1
 /subscriptions/[subscriptionId]|PUT
 /subscriptions/[subscriptionId]|DELETE
